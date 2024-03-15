@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tablas</title>
+</head>
+<style>
+    h1 {
+        text-align: center;
+    }
+
+    /* Para abrir llaves{} pulsamos AltGr+ tilde*/
+    /*Asterisco en programación(*) significa "todo"*/
+    /*table * significa "todo lo que esta dentro de table"*/
+
+    table * {
+        border: 1px solid black;
+
+        /*padding es un relleno en blanco para las celdas de la tabla*/
+        padding: 4px;
+    }
+
+
+
+    table {
+        /*Esto es para que ocupe todo el ancho de la pantalla*/
+        width: 100%;
+        /*con esto eliminamos los bordes internos de la tabla*/
+        border-collapse: collapse;
+        /*con esto centramos el texto en las celdas*/
+        text-align: center;
+        /*cambiar fuente o tipo de letra*/
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+        border: 1px solid black;
+    }
+
+    th {
+        /*color de fondo*/
+        background-color: aquamarine;
+        /*color de letra*/ 
+        color: green;
+        /*alinear a la izquierda*/
+        text-align: left;
+    }
+</style>
+
+<body>
+    <h1>Tablas en HTML</h1>
+
+    <h2>Tablas de clientes</h2>
+
+    <table>
+
+        <thead>
+            <tr>
+                <th>Nombre</th>
+                <th>Apellido</th>
+                <th>Edad</th>
+                <th>Localidad</th>
+                <th>Profesión</th>
+            </tr>
+        </thead>
+        <tr>
+            <td>Alejandra</td>
+            <td>Gómez</td>
+            <td>32</td>
+            <td>Sarrikue</td>
+            <td>Abogada</td>
+        </tr>
+        <tr>
+            <td>Arantxa</td>
+            <td>Eguez</td>
+            <td>21</td>
+            <td>Portugalete</td>
+            <td>Ingeniera industrial</td>
+        </tr>
+        <tr>
+            <td>Yudy</td>
+            <td>Silva</td>
+            <td>25</td>
+            <td>Santurtzi</td>
+            <td>Gestora</td>
+        </tr>
+        <tr>
+            <td>Yuliana</td>
+            <td>Eguez</td>
+            <td>22</td>
+            <td>Barcelona</td>
+            <td>Carpintera</td>
+        </tr>
+    </table>
+
+
+
+</body>
+
+</html>
