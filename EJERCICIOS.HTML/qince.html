@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+</head>
+
+<body>
+    <form action="">
+        <h2> Completa el formulario:</h2>
+
+        <label for="Nombre">Nombre:</label><br>
+        <input type="text" name="Nombre" id="Nombre" maxlength="5"><br>
+
+        <label for="Contraseña">Contraseña:</label><br>
+        <input type="password" name="Contraseña" id="Contraseña"><br>
+
+        <label for="email">Correo electrónico:</label><br>
+        <input type="email" name="email" id="email"><br>
+
+        <label for="edad">Edad:</label><br>
+        <input type="number" name="edad" id="edad" maxlength="2"><br>
+
+        <label for="teléfono">Teléfono:</label><br>
+        <input type="tel" pattern="[0-9]{9}" name="teléfono" id="teléfono"><br>
+
+        <label for="dni">DNI</label><br>
+        <input type="text" pattern="[0-9]{8}[A-Za-z]"><br><br>
+
+        <fieldset>
+            <legend>Género</legend>
+
+            <input type="radio" name="Género" id="masculino" value="masculino">
+            <label for="masculino">Masculino</label><br>
+
+            <input type="radio" name="Género" id="femenino" value="femenino">
+            <label for="femenino">Femenino</label>
+        </fieldset><br>
+
+        <label for="archivo">Selecciona un archivo:</label>
+        <input type="file" id="archivo" name="archivo"><br><br>
+
+        <input type="checkbox" id="Suscribir" name="Suscribir" checked>
+        <label for="Suscribir">Suscribirme al boletín</label><br><br>
+
+        <input type="submit" value="Enviar">
+        <button type="submit">Enviar</button>
+        
+        
+    </form>
+
+    <!--dos maneras de enviar-->
+
+    
+</body>
+
+
+</html>

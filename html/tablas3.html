@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tablas 3</title>
+</head>
+<style>
+    table, table *{border: 1px solid black;}
+    .verde {background-color: rgb(129, 211, 129);
+    }
+    .rojo {background-color: rgb(233, 18, 18);}
+    .rojoclaro {background-color: rgb(248, 102, 102);}
+    .rosa {background-color: pink;}
+    .amarillo {background-color: yellow;}
+    .verde{background-color: green;}
+    
+</style>
+
+<body>
+    <table>
+        <thead>
+            <tr>
+                <th rowspan="2"></th>
+                <td colspan="2">1ªEval</td>
+                <td colspan="2">2ª Eval</td>
+                <td colspan="2">3ªEval</td>
+            </tr>
+            <tr>
+                <td class="verde">Aprobados</td>
+                <td class="rojo">Suspendidos</td>
+                <td class="verde">Aprobados</td>
+                <td class="rojo">Suspendidos</td>
+                <td class="verde">Aprobados</td>
+                <td class="rojo">Suspendidos</td>
+            </tr>
+            <tr>
+                <td>Informática</td>
+                <td>20</td>
+                <td>2</td>
+                <td>19</td>
+                <td>3</td>
+                <td>22</td>
+                <td>0</td>
+            </tr>
+            <tr>
+                <td>Matemáticas</td>
+                <td>10</td>
+                <td>12</td>
+                <td>15</td>
+                <td>7</td>
+                <td>12</td>
+                <td>10</td>
+            </tr>
+        </thead>
+    </table><br><br><br>
+    
+    
+    <table>
+        <thead>
+            <td>Horas</td>
+            <td>Lunes</td>
+            <td>Martes</td>
+            <td>Miércoles</td>
+            <td>Jueves</td>
+            <td>Viernes</td>
+        </thead>
+        <tr>
+            <td>8:00-9:00</td>
+            <td rowspan="2" class="rojo">Matematicas</td>
+            <td class="rojoclaro">Lengua</td>
+            <td>Música</td>
+            <td></td>
+            <td rowspan="2" class="rojo">Matemáticas</td>
+        </tr>
+        <tr>
+            <td>9:00-10:00</td>
+            <td>Inglés</td>
+            <td>Inglés</td>
+            <td class="rosa">E.Física</td>
+        </tr>
+        <tr>
+            <td>10:00:10:30</td>
+            <td colspan="5" class="verde">Recreo</td>
+        </tr>
+        <tr>
+            <td>10:30:11:30</td>
+            <td class="rosa">E.Física</td>
+            <td>Valenciano</td>
+            <td rowspan="2" class="rojoclaro">Lengua</td>
+            <td class="amarillo">Informática</td>
+            <td>Inglés</td>
+        </tr>
+        <tr>
+            <td>12:30-13:30</td>
+            <td>Música</td>
+            <td class="rosa">E.Física</td>
+            <td rowspan="2" class="rojo">Matemáticas</td>
+            <td class="amarillo">Informática</td>
+        </tr>
+        <tr>
+            <td>13:30-14:30</td>
+            <td></td>
+            <td class="amarillo">Informática</td>
+            <td></td>
+            <td></td>
+        </tr>
+    </table>
+</body>
+
+
+</html>
