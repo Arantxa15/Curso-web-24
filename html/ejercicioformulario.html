@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+</head>
+
+<style>
+    body {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+        animation: fondo 10s infinite alternate;
+        margin: 0;
+    }
+
+    form {
+        background-color: rgba(0, 0, 0, 0.121);
+        padding: 0 15px;
+        border-radius: 10px;
+    }
+
+    @keyframes fondo {
+        from {
+            background-color: white;
+        }
+
+        to {
+            background-color: rgb(26, 113, 235);
+        }
+    }
+
+    input#color{
+        border-radius: 50%;
+        width: 1,6rem;
+        height: 1,6rem;
+    }
+</style>
+
+<body>
+    <form action="" method="get">
+
+        <p>
+            <label for="Nombre">Nombre:</label>
+            <input type="text" name="name_control" id="nombre" maxlength="8" autofocus required>
+        </p>
+
+        <p>
+            <label for="correo electrónico">Correo electrónico:</label>
+            <input type="email" name="correo electronico" id="correo electronico" autofocus required>
+        </p>
+
+        <p>
+            <label for="URL">URL:</label>
+            <input type="url" name="url" id="url" placeholder="Escribe la URL de tu página web personal" autofocus
+                required>
+        </p>
+
+        <p>
+            <label for="fecha">Fecha:</label>
+            <input type="date" name="fecha" id="fecha" autofocus required>
+        </p>
+
+        <p>
+            <label for="tiempo">Tiempo:</label>
+            <input type="time" name="tiempo" id="tiempo" autofocus required>
+        </p>
+
+        <p>
+            <label for="fecha y hora">Fecha y hora:</label>
+            <input type="datetime-local" name="fecha y hora" id="fecha y hora" autofocus required>
+        </p>
+
+        <p>
+            <label for="mes">Mes:</label>
+            <input type="month" name="mes" id="mes" autofocus required>
+        </p>
+
+        <p>
+            <label for="semana">Semana:</label>
+            <input type="week" name="semana" id="semana" autofocus required>
+        </p>
+
+        <p>
+            <label for="numero">Número (min -10, max 10):</label>
+            <input type="number" name="numero" id="numero" min="10" max="10" value="0" autofocus required>
+        </p>
+
+        <p>
+            <label for="teléfono">Teléfono:</label>
+            <input type="tel" name="teléfono" id="teléfono" autofocus required>
+        </p>
+
+        <p>
+            <label for="termino de busqueda">Término de búsqueda:</label>
+            <input type="search" name="termino de busqueda" id="termino de busqueda" autofocus required>
+        </p>
+
+        <p>
+            <label for="color favorito">Color Favorito:</label>
+            <input id="color" type ="color" name="color favorito" id="color favorito" autofocus required>
+        </p>
+
+        <p>
+            <button type="submit">Enviar</button>
+        </p>
+
+    </form>
+</body>
+
+</html>
