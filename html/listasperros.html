@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista perros y formulario</title>
+
+</head>
+
+<body>
+
+    <h1>Lista y formulario</h1>
+    <h2>Perros</h2>
+
+    <ul>
+        <li>Razas</li>
+        <li><b>Alimentación</b>
+            <ul>
+                <li><a href="#">Dieta equilibrada</a></li>
+                <li><b><a href="#">Alimentos a evitar</a></b></li>
+            </ul>
+        </li>
+        <li>Ejercicio
+            <ul>
+                <li><b>Ejercicio diario</b></li>
+                <li>Paseos</li>
+            </ul>
+        </li>
+        <li>Higiene
+            <ol>
+                <li>Baño</li>
+                <li>Cepillado</li>
+                <li>Cuidados</li>
+            </ol>
+        </li>
+        <li>Más info</li>
+    </ul>
+
+    <br>
+
+    <ul style="list-style: none;">
+        <li><i>Contacto</i>
+            <ul style="list-style: none;">
+                <li>Teléfono</li>
+                <li><b>Email</b></li>
+                <li>Fax</li>
+            </ul>
+
+        </li>
+        <li class="sincirculo"><i>Dirección</i></li>
+    </ul>
+
+    <h2>Formulario de registros</h2>
+
+    <form action="mailto@:correoexample.com" method="post">
+
+
+<label>Género</label><br>
+<input type="radio" name="genero" id="hombre" value="hombre" checked>
+<label for="hombre">Hombre</label><br>
+<input type="radio" name="genero" id="mujer" value="mujer">
+<label for="mujer">Mujer</label><br>
+<input type="radio" name="genero" id="otro" value="otro">
+<label for="otro">Otro</label><br><br>
+
+<label for="nombre">Nombre:</label><br>
+<input type="text" name="nombre" id="nombre" required maxlength="10"><br><br>
+
+<label for="apellido">Apellidos:</label><br>
+<input type="text" name="apellido" id="apellido" maxlength="20" size="20"><br><br>
