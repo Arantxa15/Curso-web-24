@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Listas y formularios</title>
+</head>
+<body>
+
+    <h1>Listas y formularios</h1>
+
+    <h2>Perros</h2>
+
+    <ul>
+        <li>Razas</li>
+        <li><b>Alimetación</b>
+        <ul>
+            <li><a href="#">Dieta equilibrada</a></li>
+            <li><b><a href="#">Alimentación a evitar</a></b></li>
+        </ul>
+        </li>
+
+        <li>Ejercicio
+            <ul>
+                <li><b>Ejercicio diario</b></li>
+                <li>Paseos</li>
+            </ul>
+            
+        </li>
+        <li>Higiene
+            <ol>
+                <li>Baño</li>
+                <li>Cepillado</li>
+                <li>Paseos</li>
+            </ol>
+            
+        </li>
+        <li>Más info</li>
+
+    </ul>
+    <br>
+
+    <ul style="list-style: none;"> 
+        <li><i>Contacto</i></li>
+        <ul style="list-style: none;">
+            <li>Teléfono</li>
+            <li>Email</li>
+            <li>Fax</li>
+        </ul>
+
+        <li><i>Dirección</i></li>
+
+
+    </ul>
+
+
+    <h2>Formulario de registros</h2>
+
+    <form action="mailto: correo@example.com" method="post">
+        <legend>Género</legend>
+
+        <input type="radio" name="sexo" value="hombre" id="hombre" checked>
+        <label for="hombre">Hombre</label><br>
+
+        <input type="radio" name="sexo" value="mujer" id="mujer">
+        <label for="mujer">Mujer</label><br>
+
+        <input type="radio" name="sexo" value="otro" id="otro">
+        <label for="otro">Otro</label>
+    </form>
+    
+</body>
+</html>

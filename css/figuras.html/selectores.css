@@ -1,0 +1,51 @@
+button {
+    background-color: dodgerblue;
+    color: white;
+    font-size: 1.2rem;
+}
+
+#btn1 {
+    background-color: crimson;
+    border-radius: 1.2rem;
+
+}
+
+.grupo-btn {
+    background-color: forestgreen;
+    border-radius: 50%;
+}
+
+* {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+h4, h5, h6 {
+    text-align: center;
+    border: 1px dashed black;
+}
+
+/* Selectores combinadores */
+/* Este selector hace referencia a todos los párrafos que esten dentro de un div */
+
+div p {
+    background-color: dodgerblue;
+    color: white;
+}
+
+div > span {
+    background-color: darkviolet;
+    color: white;
+}
+
+h5 + p {
+    background-color: hotpink;
+}
+
+div h6 ~ p {
+    background-color: tomato;
+
+}
+
+footer {
+    height: 150px;
+}
