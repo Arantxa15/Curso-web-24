@@ -1,0 +1,66 @@
+/* Poner un color de fondo en toda la página */
+body {
+    background-color: lightgray;
+}
+h1 + div {
+    background-color: lightskyblue;
+}
+div p {
+    background-color: tomato;
+}
+
+/* Opacidad */
+
+#opacidad div {
+    background-color: green;
+    text-align: center;
+    padding: 25px;
+}
+#opacidad div {
+    opacity: 1;
+}
+#opacidad div + div {
+    opacity: 0.7;
+}
+#opacidad div + div + div + div {
+    opacity: 0.35;
+}
+#opacidad div + div + div + div {
+    opacity: 0.1;
+}
+
+/* RGBA */
+#opacidad-rgb {
+    text-align: center;
+    padding: 25px;
+    background-color: rgba(255, 180, 250, 0.5);
+}
+
+/* Imagen */
+#imagen {
+    height: 200px;
+    /* definir fuente de la imagen */
+    background-image: url(https://img.freepik.com/fotos-premium/retrato-perro-golden-retriever-negro_58409-13744.jpg);
+    /* parámetros de la imagen */
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+#imagen-pegada {
+    height: 2500px;
+    background-image: url(https://encrypted-tbn3.gstatic.com/images?q=tbn:https://www.veterinariaargosalbacete.com/wp-content/uploads/2019/11/cachorros-de-perro.jpg);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+#imagen-pegada2 {
+    margin-top: 100px;
+    /* height: 1000px;
+    background-image: url(https://images.squarespace-cdn.com/content/v1/57a2aeb1ff7c509ef76566c9/1580174975544-U5MTHMIVJKK6G8XBALLQ/laula-co-pdKPFBysSfA-unsplash.jpg);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed; */
+    background: #fff;
+    
+}
