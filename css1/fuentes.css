@@ -1,0 +1,42 @@
+#serif p:first-child {
+    font-family: 'Times New Roman', Times, serif;
+}
+#serif p:nth-child(2) {
+    font-family: Georgia;
+}
+#serif p:last-child {
+    font-family: Garamond;
+}
+
+#san-serif p:last-child{
+    font-family: Arial;
+}
+#san-serif p:nth-child(2) {
+    font-family: Verdana;
+}
+#san-serif p:last-child {
+    font-family: Helvetica;
+}
+
+#monospace p:first-child {
+    font-family: 'Courier New';
+}
+#monospace p:nth-child(2) {
+    font-family: 'Lucida Console';
+}
+#monospace p:last-child {
+    font-family: 'Monaco';
+}
+
+#cursive p:first-child {
+    font-family: 'Brush Script MT';
+}
+#cursive p:last-child(2) {
+    font-family: 'Lucida Handwriting';
+}
+#fantaasy p:first-child {
+    font-family: Copperplate;
+}
+#fantasy p:last-child {
+    font-family: Pappyrus;
+}
