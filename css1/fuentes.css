@@ -31,10 +31,10 @@
 #cursive p:first-child {
     font-family: 'Brush Script MT';
 }
-#cursive p:last-child(2) {
+#cursive p:last-child {
     font-family: 'Lucida Handwriting';
 }
-#fantaasy p:first-child {
+#fantasy p:first-child {
     font-family: Copperplate;
 }
 #fantasy p:last-child {
