@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Position Relative 2</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        #site-main {
+            background-color: #333;
+            color: white;
+            padding: 15px;          
+        }
+        #site-main div:nth-child(2) {
+            background-color: red;
+            width: 25px;
+            height: 25px;
+            border-radius: 50%;
+            margin: auto;
+            position: relative;
+            top: 50px;
+        }
+    </style>
+   
+</head>
+<body>
+     <main id="site-main">
+        <div>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sit laborum officia magnam tempora, esse repellat animi soluta molestiae amet laudantium voluptates corrupti magni dolorum, delectus eligendi ducimus hic eaque dicta?</p>
+        </div>
+        <div></div>
+    </main>
+</body>
+</html>
