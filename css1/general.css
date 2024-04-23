@@ -1,3 +1,5 @@
+@import url('https://fonts.googlepis.com/css2?family=Kode+Mono:wght@400..700&display=swap');
+
 body {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
@@ -14,4 +16,10 @@ table td{
 code {
     background-color: rgb(60, 60, 60);
     color: dodgerblue;
+}
+
+.recuadro {
+    border: 3px solid black;
+    margin: 0 auto;
+    padding: 0 5px;
 }

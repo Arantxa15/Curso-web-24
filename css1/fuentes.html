@@ -7,6 +7,9 @@
     <title>Fuentes</title>
     <link rel="stylesheet" href="general.css">
     <link rel="stylesheet" href="fuentes.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css?family=Audiowide&family=Dancing+Script:wght@400..700&display=swap&effect=fire|neon" rel="stylesheet">
 </head>
 
 <body>
@@ -136,6 +139,41 @@
         <p>Esto es un párrafo.</p>
         <p>Esto es otro párrafo.</p>
     </div>
+
+    <h2>Fuente responsive</h2>
+    <p>Podemos usar la unidad <code>rem</code> para conseguir directamente el efecto de usar la combinación de
+        <code>em</code> y <code>body {font-size: 100%}</code>.</p>
+
+    <p>Otra medida responsive es la unidad <code>vw</code>, que significa "viewport width" o ancho de la pantalla.</p>
+
+    <div id="viewport" class="recuadro">
+        <h2>Texto responsive</h2>
+        <p>Cambia el tamaño de la ventana para ver el efecto</p>
+        <p>Usa la unidad "vw" para darle tamaño al texto. Por ejemplo, 10vw pondrá el texto al 10% del tamaño del ancho
+            de la pantalla.</p>
+        <p>Viewport es el tamaño de la ventana del navegador. 1vw equivale al 1% del ancho de la ventana. Si la ventana
+            mide 50cm de ancho, 1vw será 0.5cm de ancho</p>
+    </div>
+
+    <h2>Google Fonts</h2>
+    <p>Las Google Fonts son gratuitas y hay más de 1000 disponibles</p>
+    <p>
+        Para usarlas, deberemos usar un <code>link</code> especial en la sección <code>head</code> del documento.
+    </p>
+    <div id="g-font" class="recuadro">
+        <h2>Audiowide Font</h2>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+        <p>1234567890</p>
+    </div>
+    <div id="g-font2" class="recuadro">
+        <h2>Dancing Script Font</h2>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+        <p>1234567890</p>
+    </div>
+    <div id="g-effects" class="recuadro">
+        <h2 class="font-effect-neon">Jonathan</h2>
+    </div>
+
 </body>
 
 </html>
