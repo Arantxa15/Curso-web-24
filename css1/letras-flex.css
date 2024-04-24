@@ -1,0 +1,32 @@
+/* body {
+    display: flex;
+    justify-content: center;
+} */
+.flex-container {
+    display: flex;
+    flex-direction: column;
+    border: 5px solid black;
+    width: 260px;
+}
+.blue-container {
+    display: flex;
+    border: 3px solid blue;
+    height: 65px;
+}
+.blue-container div {
+    border: 3px solid black;
+    height: 60px;
+    width: 60px;
+    background-color: skyblue;
+}
+/* letra A */
+
+.primer-conenedor .segunda-fila, .primer-contenedor .cuarta-fila {
+    justify-content: space-between;
+}
+
+/* Letra R */
+
+
+
+
