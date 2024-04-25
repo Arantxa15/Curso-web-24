@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ejercicio Hover con Opacidad e Imágenes</title>
+  <style>
+
+
+
+
+* {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+
+
+
+#site-header, #site-footer {
+  background-color: #f0f0f0;
+  padding: 20px;
+  text-align: center;
+}
+
+
+
+
+#site-main {
+    padding: 25px;
+    text-align: center;
+}
+
+
+
+
+#site-main ul figure {
+  margin-bottom: 20px;
+  position: relative;
+  cursor: pointer;
+}
+
+
+#site-main ul li img {
+  width: 100%;
+}
+
+
+
+
+#site-main ul figure figcaption {
+  margin-top: 5px;
+  font-weight: bold;
+  background-color: black;
+  color: white;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0.7;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2rem;
+}
+
+
+
+
+/* Estilos para el hover */
+#site-main ul figure:hover figcaption {
+  opacity: 0;
+  transition: opacity 1s;
+}
+
+
+
+
+/* Media Query para dispositivos con ancho mínimo de 1024px */
+@media (min-width: 1024px) {
+  #site-main ul {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+
+  #site-main ul li
+   {
+  width: 30%;
+}
+
+
+
+
+  #site-main ul figure {
+    margin-right: 20px;
+  }
+}
+  </style>
+
+
+
+
+</head>
+<body>
+  <header id="site-header">
+    <h1>Galería de Imágenes</h1>
+  </header>
+  <main id="site-main">
+    <ul>
+      <li>
+          <figure>
+            <img src="../img/gato (1).jpg" alt="Imagen 1">
+            <figcaption>Imagen 1</figcaption>
+          </figure>
+      </li>
+      <li>
+          <figure>
+            <img src="../img/gato (1).jpg" alt="Imagen 2">
+            <figcaption>Imagen 2</figcaption>
+          </figure>
+      </li>
+      <li>
+          <figure>
+            <img src="../img/gato (1).jpg" alt="Imagen 3">
+            <figcaption>Imagen 3</figcaption>
+          </figure>
+      </li>
+      <li>
+        <figure>
+          <img src="../img/gato (1).jpg" alt="Imagen 4">
+          <figcaption>Imagen 4</figcaption>
+        </figure>
+    </li>
+    <li>
+        <figure>
+          <img src="../img/gato (1).jpg" alt="Imagen 5">
+          <figcaption>Imagen 5</figcaption>
+        </figure>
+    </li>
+    <li>
+        <figure>
+          <img src="../img/gato (1).jpg" alt="Imagen 6">
+          <figcaption>Imagen 6</figcaption>
+        </figure>
+    </li>
+    </ul>
+  </main>
+  <footer id="site-footer">
+    <p>Footer</p>
+  </footer>
+</body>
+</html>
