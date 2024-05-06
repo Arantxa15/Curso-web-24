@@ -1,0 +1,143 @@
+*{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    text-decoration: none;
+    font-family:"Poppins", sans-serif;
+}
+
+
+body{
+    background-color: rgb(255, 235, 239);
+}
+
+
+#site-nav{
+    background-color: #4e4e4e;
+}
+
+
+#site-nav a{
+    color: white;
+    font-size: 14px;
+    padding: 15px 20px;
+    display: block;
+}
+
+
+#site-nav a>i{
+    color: black;
+    margin-left: 10px;
+}
+
+
+#site-nav a:hover{
+    background-color: #5c5c5c;
+    color:rgb(255, 19, 90);
+}
+
+
+#site-header div i{
+    border: 1px solid rgb(255, 19, 90);
+    padding: 10px 12px;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    color: rgb(255, 19, 90);
+    cursor: pointer;
+}
+#site-header div a {
+    margin-left: 20px;
+}
+#site-nav ul li ul {
+    display: none;
+}
+
+#site-nav ul li:hover>ul {
+    display: block;
+}
+
+#site-header div {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 20px;
+    align-items: center;
+
+
+}
+
+#site-header div a {
+
+    color: rgb(136, 133, 133);
+    font-size: 1.2rem;
+}
+
+#site-header div span {
+
+    color: deeppink;
+    font-size: 2rem;
+}
+
+@media (min-width: 1024px) {
+
+    #site-header div>i {
+
+        display: none;
+    }
+
+    #site-header {
+
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        position: relative;
+
+    }
+
+    #site-header nav a {
+
+        color: gray;
+    }
+
+    #site-header ul {
+
+        display: flex;
+    }
+
+    #site-header nav a:hover {
+
+        background-color: rgb(240, 219, 223);
+
+    }
+
+    #site-header nav {
+        background-color: inherit;
+    }
+
+    #site-nav ul>li>ul {
+        background-color: rgb(87, 87, 87);
+        position: absolute;
+        top: 100%;
+        right: 0;
+        width: 100%;
+        padding: 50px;
+        /* la calculadora se utiliza para restar el padding y que encaje bien con las medidas */
+        width: calc(100% - 100px);
+
+
+
+    }
+
+
+    #site-header div {
+        padding: 0;
+    }
+
+    #site-nav ul li:hover ul{
+        display: flex;
+    }
+    #site-nav ul>li>ul>li {
+        width: 30%;
+        padding: 20px;
+    }
+    
+}
