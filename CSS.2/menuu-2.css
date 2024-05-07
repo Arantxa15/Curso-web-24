@@ -1,0 +1,26 @@
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+    font-family: "Poppins", sans-serif;
+}
+body {
+    background-color: floralwhite;
+}
+nav {
+    background-color: darkgray;
+}
+#site-nav a{
+    color: white;
+    display: block;
+    padding: 15px 20px;
+    font-size: 14px;    
+}
+#site-nav a>i {
+    color: black;
+    margin-left: 10px;
+}
+#site-header nav a:hover {
+    color: crimson;
+}

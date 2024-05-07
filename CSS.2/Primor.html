@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            list-style: none;
+            text-decoration: none;
+            font-family: sans-serif;
+        }
+
+
+        body {
+            background-color: brown;
+        }
+
+
+        #site-header {
+            background-color: black;
+            text-align: center;
+            font-size: 0.8rem;
+        }
+
+
+        #site-header nav a {
+            color: white;
+            font-weight: bold;
+            padding: 10px;
+            display: inline-block;
+            border: 2px solid black;
+        }
+
+
+        #site-header nav a:hover {
+            border-bottom: 2px solid red;
+        }
+
+
+        #site-header nav ul>li>ul {
+            background-color: rgb(255, 255, 255);
+        }
+
+
+        #site-header nav ul>li>ul a {
+            color: black;
+            border: 2px solid white;
+        }
+
+
+        #site-header nav ul>li>ul {
+            display: none;
+        }
+
+        @media (min-width: 1024px) {
+            #site-header nav>ul {
+                display: flex;
+                justify-content: center;
+                position: relative;
+            }
+
+            #site-header nav ul>li:nth-child(3):hover>ul {
+                position: absolute;
+                width: 100%;
+                top: 100%;
+                right: 0;
+                display: flex;
+                padding: 20px 0;
+            }
+
+            #site-header nav ul>li:nth-child(3):hover>ul>li>ul {
+                display: block;
+            }
+
+            #site-header nav ul>li:nth-child(3):hover>ul>li>ul a {
+                font-weight: 400;
+                padding: 10px;
+                border: none;
+            }
+
+            #site-header nav ul>li:nth-child(3):hover>ul>li>ul>li:hover a {
+                text-decoration: underline;
+                transition: 0.8s;
+                color: red;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header id="site-header">
+        <nav>
+            <ul>
+                <li><a href="https://www.primor.eu/es_es/marcas">MARCAS</a></li>
+                <li><a href="https://www.primor.eu/es_es/regalos-originales-dia-del-padre">DÍA DEL PADRE</a></li>
+                <li><a href="https://www.primor.eu/es_es/perfumes">PERFUMES</a>
+                    <ul>
+                        <li><a href="https://www.primor.eu/es_es/perfumes-de-mujer">Perfumes de mujer</a>
+                            <ul>
+                                <li><a href="https://www.primor.eu/es_es/agua-de-colonia-para-mujer">Colonias de
+                                        mujer</a></li>
+                                <li><a href="https://www.primor.eu/es_es/cofres-de-perfumes-para-mujer">Cofres de
+                                        perfumes</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="https://www.primor.eu/es_es/perfumes-para-hombres">Perfumes para hombres</a>
+                            <ul>
+                                <li><a href="https://www.primor.eu/es_es/colonias-para-hombres">Colonias de hombres</a>
+                                </li>
+                                <li><a href="https://www.primor.eu/es_es/cofres-de-perfumes-para-hombre">Cofres de
+                                        perfumes para hombres</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="https://www.primor.eu/es_es/perfumes-para-ninos">Perfumes para niños</a></li>
+                        <li><a href="https://www.primor.eu/es_es/aguas-de-colonia">Agua de colonia</a></li>
+                        <li><a href="https://www.primor.eu/es_es/cofres-y-estuches-de-perfumes">Cofres</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">MAQUILLAJE</a></li>
+                <li><a href="#">COSMÉTICA</a></li>
+                <li><a href="https://www.primor.eu/es_es/cabello">CABELLO</a></li>
+
+
+
+                <li><a href="https://www.primor.eu/es_es/corporales">CORPORALES</a></li>
+            </ul>
+        </nav>
+    </header>
+
+</body>
+
+</html>
