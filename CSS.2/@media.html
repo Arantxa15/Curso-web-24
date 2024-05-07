@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@media</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, Helvetica, sans-serif;
+            text-decoration: none;
+            list-style: none;
+            
+        }
+        #site-header {
+            background-color: #333;
+        }
+        #site-header ul {
+            text-align: center;
+        }
+        #site-header ul a {
+            display: inline-block;
+            color: white;
+            padding: 14px 16px;
+        }
+        #site-main {
+            padding: 20px;
+        }
+        #site-main section {
+            margin: 20px 0;
+            padding: 20px;
+
+        }
+        #site-main section:nth-child(1) {
+            background-color: cornflowerblue;
+        }
+        #site-main section:nth-child(2) {
+            background-color: rgba(50, 50, 50, 50);
+            color: white;
+        }
+        @media (min-width: 1024px) {
+            #site-header ul {
+                display: flex;
+                padding: 20px;
+            }
+            #site-main {
+                display: flex;
+            }
+            #site-main section:nth-child(1) {
+                width: 70%;
+            }
+            #site-main section:nth-child(2) {
+                width: 30%;
+            }
+        }
+        
+    </style>
+</head>
+<body>
+    <header id="site-header">
+        <nav>
+          <ul>
+            <li><a href="#">Inicio</a></li>
+            <li><a href="#">Acerca de</a></li>
+            <li><a href="#">Servicios</a></li>
+            <li><a href="#">Contacto</a></li>
+          </ul>
+        </nav>
+      </header>
+     
+      <main id="site-main">
+        <section>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae illo similique officia, optio tempora, eligendi velit minima, at fuga asperiores dolorum maxime. Corporis praesentium eveniet accusantium ipsam magnam nemo modi?</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Similique deserunt rerum sit adipisci illo, maxime animi saepe. Omnis quibusdam, maxime eveniet sint iusto tenetur harum consequuntur corrupti doloribus porro dignissimos?</p>
+           
+        </section>
+        <section>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo veniam porro dolor aliquam velit, culpa nobis minima ipsa. Non, fugit! Magni aliquid commodi enim, maxime corrupti consequuntur aspernatur impedit fugiat?</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim, consequatur! Ut beatae eum quo doloribus officiis aperiam, at nesciunt inventore, perspiciatis nobis blanditiis! Tempore, omnis! Fuga itaque omnis provident ea.</p>
+        </section>
+    </main>
+
+</body>
+</html>

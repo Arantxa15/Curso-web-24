@@ -1,0 +1,113 @@
+#serif p:first-child {
+    font-family: 'Times New Roman', Times, serif;
+}
+#serif p:nth-child(2) {
+    font-family: Georgia;
+}
+#serif p:last-child {
+    font-family: Garamond;
+}
+
+#san-serif p:last-child{
+    font-family: Arial;
+}
+#san-serif p:nth-child(2) {
+    font-family: Verdana;
+}
+#san-serif p:last-child {
+    font-family: Helvetica;
+}
+
+#monospace p:first-child {
+    font-family: 'Courier New';
+}
+#monospace p:nth-child(2) {
+    font-family: 'Lucida Console';
+}
+#monospace p:last-child {
+    font-family: 'Monaco';
+}
+
+#cursive p:first-child {
+    font-family: 'Brush Script MT';
+}
+#cursive p:last-child {
+    font-family: 'Lucida Handwriting';
+}
+#fantasy p:first-child {
+    font-family: Copperplate;
+}
+#fantasy p:last-child {
+    font-family: Pappyrus;
+}
+
+/* Estilos de fuente */
+#italic p {
+    font-style: normal;
+}
+#italic p:nth-child(2) {
+    font-style: italic;
+}
+#italic p:last-child {
+    font-style: oblique;
+}
+
+#weight p {
+    font-weight: normal;
+}
+#weight p:nth-child(2) {
+    font-weight: lighter;
+}
+#weight p:nth-child(3) {
+    font-weight: bold;
+}
+#weight p:last-child {
+    font-weight: 900;
+}
+
+#variant {
+    font-variant: small-caps;
+    text-transform: capitalize;
+}
+/* Tamaños de fuente */
+#absoluto h2 {
+    font-size: 40px;
+}
+#absoluto h3 {
+    font-size: 30 px;
+}
+#absoluto p {
+    font-size: 14px;
+}
+
+#absoluto-em h2 {
+    font-size: 2.5em;
+}
+#absoluto-em h3 {
+    font-size: 1.875em;
+}
+#absoluto-em p {
+    font-size: 0.875em;
+}
+body {
+    font-size: 100%;
+}
+
+/* Fuentes responsive */
+#viewport h2 {
+    font-size: 10vw;
+}
+#viewport p {
+    font-size: 5vw;
+}
+
+#g-font {
+    font-family: Audiowide;
+}
+#g-font2 {
+    font-family: 'Dancing Script';
+}
+#g-effects {
+    font-family: Audiowide;
+    background-color: rgb(40, 40, 40);
+}

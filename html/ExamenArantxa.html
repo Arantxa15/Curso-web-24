@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Examen HTML</title>
+</head>
+
+<body>
+    <fieldset>
+
+        <h1>Menú</h1>
+
+        <ul>
+            <li>Inicio</li>
+            <li><b>Noticias</b>
+                <ul>
+                    <li><a href="#">Recientes</a></li>
+                    <li><b><a href="#">Más leídas</a></b></li>
+                    <li><a href="#">Más valoradas</a></li>
+                </ul>
+            </li>
+
+            <li>Artículos
+                <ol>
+                    <li><b>XHTML</b></li>
+                    <li>CSS</li>
+                    <li>JavaScript</li>
+                    <li>Otros</li>
+                </ol>
+            </li>
+
+            <li>Contacto</li>
+
+            <li style="list-style: none;">
+                <i>Email</i>
+                <ul>
+                    <li style="list-style: none;"><b>nombre@dirección.com</b> </li>
+                </ul>
+            </li>
+
+            <li style="list-style: none;">
+                <i>Teléfono</i>
+                <ul>
+                    <li style="list-style: none;"> 900 900 900</li>
+                </ul>
+            </li>
+
+            <li style="list-style: none;">
+                <i>Fax</i>
+                <ul style="list-style: none;">
+                    <li style="list-style: none;">900 900 900</li>
+                </ul>
+            </li>
+
+        </ul>
+    </fieldset>
+
+    <hr><br>
+
+    <form action="">
+    <h2>Rellena tu CV</h2>
+
+    <label for="nombre">Nombre</label><br>
+    <input type="text" name="nombre" id="nombre" required maxlength="30"><br>
+
+    <label for="apellidos">Apellidos</label><br>
+    <input type="text" name="apellidos" id="apellidos" required maxlength="80" size="40"><br>
+
+    <label for="contraeña">Contraseña</label><br>
+    <input type="password" id="contraseña" name="contraseña" required maxlength="10"><br>
+
+    <label for="dni">DNI</label><br>
+    <input type="text" id="dni" name="dni" pattern=" [0-9]{8}[A-Za-z]" size="9"><br>
+
+    <label for="Género">Género</label><br>
+
+    <input type="radio" name="hombre" id="hombre" checked>
+    <label for="hombre">Hombre</label><br>
+
+    <input type="radio" name="mujer" id="mujer">
+    <label for="mujer">Mujer</label><br><br>
+
+    <label for="incluir_mi_foto">Incluir mi foto</label>
+    <input type="text">
+    <input type="file" name="incluir_mi_foto" id="incluir_mi_foto" required><br><br>
+    
+    <input type="checkbox" id="suscribirme" name="suscribirme" checked required>
+    <label for="suscribirme">Suscribirme al boletín de novedades</label><br><br>
+    
+    <button type="submit">Guardar cambios</button>
+    <button type="reset">Borrar los datos introducidos</button>
+</form>
+</body>
+
+</html>

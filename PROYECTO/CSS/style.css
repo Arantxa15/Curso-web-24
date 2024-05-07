@@ -1,0 +1,83 @@
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+    font-family: "Roboto", sans-serif;
+}
+img, video{
+    width: 100px;
+}
+body {
+    margin: 20px 80px;
+}
+#site-header img {
+    width: 80px
+}
+#site-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#site-header nav>ul {
+    display: flex;
+}
+/* Flecha */
+#site-header nav>ul>li {
+    position: relative;
+    margin: 0 20px;
+    
+}
+#site-header nav>ul>li>i {
+    position: absolute;
+    color: orange;
+    bottom: 150%;
+    opacity: 0;
+    left: 45%;
+}
+#site-header nav>ul>li>a:hover + i{
+    bottom: 100%;
+    opacity: 1;
+    transition: opacity 1s, bottom 1s;
+}
+#site-header nav>ul>li i {
+    color: orange;
+}
+#site-header nav>ul a {
+    color: #333;
+    padding: 10px;
+    letter-spacing: 2px;
+}
+/* Position absolute desplegar */
+#site-header nav>ul>li>ul {
+    position: absolute;
+    top: 100%;
+    width: 100%;
+    right: 0;
+    padding: 10px;
+    display: none;
+}
+#site-header nav>ul>li:hover ul{
+    display: block;
+    
+}
+
+#index-main h1{
+    font-size: 40px;
+    margin-top: 80px;
+    margin-bottom: 80px;
+}
+#index-main h1>span {
+    background-color: orange;
+    cursor: pointer;
+}
+#index-main h1>span:hover {
+    background-color: white;
+    transition: background-color 2s;
+}
+#index-main article:first-child a>video {
+    width: 100%;
+}
+#index-main div {
+    color: black;
+}

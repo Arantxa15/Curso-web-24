@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Página Web</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+            font-family: Arial, Helvetica, sans-serif;
+            text-decoration: none;
+        }
+
+        #site-header {
+            background-color: rgb(14, 146, 146);
+            color: #fff;
+            padding: 20px, 50px;
+            text-align: center;
+        }
+        #site-header nav {
+            margin: 20px 0 0 0;
+            padding: 10px;
+        }
+        #site-header nav li {
+            display: inline-block;
+        }
+        #site-header nav a {
+            display: inline-block;
+            color: #fff;
+            padding: 10px;
+            margin: 0 5px 0;
+            font-weight: bold;
+            border-left: 3px solid white;
+            border-right: 3px solid white;
+        }
+
+        #site-main {
+            padding: 50px;
+            text-align: center;
+
+        }
+        #site-main section {
+            display: inline-block;
+            width: 30%;
+            padding: 40px;
+            height: 550px;
+            background-color: rgb(222, 229, 240);
+            margin: 0 20 px;
+        }
+        #site-main section h2 {
+            margin-bottom: 20px;
+        }
+        #site-main .section-dos {
+            background-color: #43748b;
+            color: white;
+        }
+        #site-main section a {
+            display: inline-block;
+            padding: 15px 40px;
+            background-color: #333;
+            color: rgb(182, 230, 12);
+            margin-top: 50px;
+            border-top: 2px solid rgb(182, 230, 12);
+            border-bottom: 2px solid rgb(182, 230, 12);
+        }
+
+        #site-footer {
+            background-color: #333;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <header id="site-header">
+        <h1>Mi Página Web</h1>
+
+        <nav>
+
+            <ul>
+                <li><a href="#">Inicio</a></li>
+                <li><a href="#">Acerca de</a></li>
+                <li><a href="#">Servicios</a></li>
+                <li><a href="#">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main id="site-main">
+        <section>
+            <h2>Sobre Nosotros</h2>
+
+            <p>
+                Somos una empresa dedicada a ofrecer soluciones digitales a nuestros clientes. Con años de experiencia
+                en el mercado, nos esforzamos por brindar sevicios de alta calidad y satisfacción del cliente.
+            </p>
+
+            <a href="#">ver más</a>
+        </section>
+
+        <section class="section-dos">
+            <h2>Servicios 2</h2>
+
+            <p>
+                Somos una empresa dedicada a ofrecer soluciones digitales a nuestros clientes. Con años de experiencia
+                en el mercado, nos esforzamos por brindar sevicios de alta calidad y satisfacción del cliente.
+            </p>
+
+            <a href="#">ver más</a>
+        </section>
+    </main>
+
+    <footer id="site-footer">
+        &copy;Mi Empresa Web
+    </footer>
+
+</body>
+
+</html>
