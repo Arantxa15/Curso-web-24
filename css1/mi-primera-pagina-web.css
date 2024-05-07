@@ -43,10 +43,33 @@ main {
     padding: 20px;
 }
 .izquierda img {
-    width: 200px;
+    width: 300px;
+    display: block;
+    margin-top: 15px;
+    margin-bottom: 10px;
+}
+.izquierda p, .derecha p{
+    font-weight: bold;
+    color: #444;
+}
+.izquierda a, .derecha a{
+    color: gray;
 }
 .derecha {
     display: block;
     background-color: aquamarine;
     padding: 20px;
+}
+.derecha img {
+    width: 300px;
+    margin-top: 15px;
+    margin-bottom: 10px;
+}
+.derecha #texto {
+    font-weight: lighter;
+}
+
+footer {
+    background-color: blue;
+    padding: 40px;
 }
