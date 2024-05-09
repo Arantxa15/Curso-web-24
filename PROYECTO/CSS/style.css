@@ -6,13 +6,10 @@
     font-family: "Roboto", sans-serif;
 }
 img, video{
-    width: 100px;
+    width: 100%;
 }
 body {
     margin: 20px 80px;
-}
-#site-header img {
-    width: 80px
 }
 #site-header {
     display: flex;
@@ -75,9 +72,93 @@ body {
     background-color: white;
     transition: background-color 2s;
 }
-#index-main article:first-child a>video {
-    width: 100%;
-}
 #index-main div {
     color: black;
+    font-weight: bold;
 }
+#index-main section>div {
+    flex-wrap: wrap;
+    display:flex;
+}
+#index-main section>div article{
+    width: 100%;
+}
+#index-main section article div{
+    margin-bottom: 60px;
+}
+#index-main article i {
+    margin-left: 10px;
+    color: chocolate;
+    translate:0px;
+    opacity: 1;
+}
+#index-main article p:hover{
+    color: chocolate;
+    transition: color 0.8s;
+}
+#index-main article p:hover i{
+    transition:translate 1s, opacity 1s;
+    translate: 40px;
+    opacity: 0;
+}
+#index-main section>div a{
+    display: inline-block;
+    padding: 15px;
+    color: black;
+    border: 1px solid black;
+    margin: auto;
+}
+#index-main section>a:hover{
+    background-color: black;
+    color: chocolate;
+    transition: background-color 1s;
+}
+#index-main section:last-child h2 {
+    font-size: 40px;
+    margin-top: 80px;
+    margin-bottom: 80px;
+}
+#index-main section:last-child h2>span {
+    background-color: orange;
+    cursor: pointer;
+}
+#index-main section:last-child h2>span:hover {
+    background-color: white;
+    transition: background-color 2s;
+}
+#site-aside {
+    display: none;
+}
+#site-footer {
+    background-color: black;
+    
+}
+#site-footer div {
+
+}
+#site-footer p {
+    color: white;
+}
+/* NOSOTROS */
+#site-header .active {
+    border-bottom: 2px solid orange;
+
+}
+#nosotros-main section:first-child {
+    background-color: #333; 
+}
+#nosotros-main section:first-child>h1 {
+    color: orange;
+    padding: 40px ;
+    font-size: 3rem;
+}
+#nosotros-main section:first-child div {
+    color: #fff;
+    padding: 40px;
+    display: flex;
+}
+#nosotros-main section:first-child div p {
+    padding: 30px;
+}
+
+
