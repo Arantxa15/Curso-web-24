@@ -8,11 +8,16 @@
 img, video{
     width: 100%;
 }
-body {
+#site-header, #index-main {
     margin: 20px 80px;
+}
+#site-header img {
+    width: 80px;
 }
 #site-header {
     display: flex;
+    position: relative;
+    padding: 20px 10px;
     justify-content: space-between;
     align-items: center;
 }
@@ -81,7 +86,7 @@ body {
     display:flex;
 }
 #index-main section>div article{
-    width: 100%;
+    width: 50%;
 }
 #index-main section article div{
     margin-bottom: 60px;
@@ -131,13 +136,22 @@ body {
 }
 #site-footer {
     background-color: black;
+    color: aliceblue;
+    padding: 50px;
+    text-align: center;
     
 }
-#site-footer div {
+#site-footer a {
+    color: white;
+    display: inline-block;
+    font-size: 20px;
+    margin-bottom: 15px;
+    margin: 10px;
 
 }
-#site-footer p {
-    color: white;
+#site-footer a:hover {
+    cursor: pointer;
+    color: chocolate;
 }
 /* NOSOTROS */
 #site-header .active {
@@ -146,19 +160,65 @@ body {
 }
 #nosotros-main section:first-child {
     background-color: #333; 
+    padding: 80px 10%;
 }
 #nosotros-main section:first-child>h1 {
     color: orange;
-    padding: 40px ;
     font-size: 3rem;
+    display: flex;
+    margin: 15px;
+    padding: 35px;;
+    
 }
 #nosotros-main section:first-child div {
     color: #fff;
-    padding: 40px;
     display: flex;
+    padding: 55px;
+    justify-content: space-between;
+
 }
 #nosotros-main section:first-child div p {
-    padding: 30px;
+    width: 45%;
+    
+}
+#nosotros-main section:first-child div p:first-child {
+    border-bottom: 1px solid chocolate;
+    font-weight: bold;
+    font-size: 16px;
+    
+}
+#nosotros-main section:first-child div p:last-child {
+    font-size: 15px;
+}
+#nosotros-main section:nth-child(2), section:last-child {
+    margin: 100px 80px;
+}
+#nosotros-main section:nth-child(2) div {
+    display: flex;
+    justify-content: space-between;
+    padding: 50px 0;
+}
+#nosotros-main section:nth-child(2) h2, section:last-child h2 {
+    font-size: 2.5rem;
 }
 
+#nosotros-main section:nth-child(2) div>p {
+   font-size: 15px;
+   width: 45%;
+}
+
+
+#nosotros-main section:last-child .ter {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 10px 10%;
+
+}
+#nosotros-main section:last-child .ter div {
+    width: 15%;
+}
+#nosotros-main section:last-child i{
+    color: orange;
+    font-size: 50px;
+}
 

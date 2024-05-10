@@ -27,11 +27,17 @@ nav .logo {
     margin: 20px;
     padding: 10px;
 }
-nav .linea {
-    border-bottom: 1px solid bisque;
-    margin: 15px;
-    padding: 10px;
+
+nav.derecha a.linea{
+    transform: translate(-50%, -50%);
+    transition: all 1s;
+    height: 1px;
+    border-bottom: 1px solid transparent;
 }
+nav.derecha a:hover{
+    border-bottom: 1px solid bisque;
+}
+
 nav .primero {
     border: 1px solid bisque;
     margin: 20px;
@@ -42,4 +48,85 @@ nav .primero {
     color: white;
     font-size: 5rem;
     padding: 150px;
+}
+/* Galería */
+
+main.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    height: 1800px;
+    justify-content: center;
+    padding: 150px 0;
+}
+
+/* main.gallery img {
+    width: 150px;
+    height: fit-content;
+
+} */
+main.gallery div.imagen {
+    width: 25%;
+    height: 33%;
+    margin: 10px;
+    padding: 20px;
+    background-color: #333;
+    border: 1px solid white;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+
+}
+
+main.gallery div.imagen:first-child {
+    background-image: url(https://images.pexels.com/photos/415585/pexels-photo-415585.jpeg);
+}
+main.gallery div.imagen:nth-child(2) {
+    background-image: url(https://images.pexels.com/photos/1001835/pexels-photo-1001835.jpeg);
+}
+main.gallery div.imagen:nth-child(3) {
+    background-image: url(https://images.pexels.com/photos/797648/pexels-photo-797648.jpeg);
+}
+main.gallery div.imagen:nth-child(4) {
+    background-image: url(https://images.pexels.com/photos/700413/pexels-photo-700413.jpeg);
+}
+main.gallery div.imagen:nth-child(5) {
+    background-image: url(https://images.pexels.com/photos/3695801/pexels-photo-3695801.jpeg);
+}
+main.gallery div.imagen:nth-child(6) {
+    background-image: url(https://images.pexels.com/photos/929284/pexels-photo-929284.jpeg);
+}
+main.gallery div.imagen:nth-child(7) {
+    background-image: url(https://images.pexels.com/photos/3095769/pexels-photo-3095769.jpeg);
+}
+main.gallery div.imagen:nth-child(8) {
+    background-image: url(https://images.pexels.com/photos/2110945/pexels-photo-2110945.jpeg);
+}
+main.gallery div.imagen:last-child {
+    background-image: url(https://images.pexels.com/photos/17649380/pexels-photo-17649380/free-photo-of-arte-edificio-en-pie-de-pie.jpeg);
+}
+div.imagen div.sumar {
+    width: 100%;
+    height: 0;
+    background-color: white;
+    position: relative;
+    transition: all 2s;
+    
+}
+
+div.imagen div.sumar p {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: bisque;
+    font-size: 4rem;
+    opacity: 0;
+}
+div.imagen:hover>div.sumar {
+    height: 100%;
+
+}
+div.imagen:hover>div.sumar>p {
+    opacity: 1;
+    transition: all 1s;
 }
