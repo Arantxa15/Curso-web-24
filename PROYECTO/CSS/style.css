@@ -81,16 +81,17 @@ img, video{
     color: black;
     font-weight: bold;
 }
-#index-main section>div {
+#index-main section {
     flex-wrap: wrap;
-    display:flex;
+    display: flex;
 }
-#index-main section>div article{
+#index-main section article{
     width: 50%;
 }
 #index-main section article div{
     margin-bottom: 60px;
 }
+
 #index-main article i {
     margin-left: 10px;
     color: chocolate;
@@ -145,8 +146,9 @@ img, video{
     color: white;
     display: inline-block;
     font-size: 20px;
-    margin-bottom: 15px;
+    margin-bottom: 20px;
     margin: 10px;
+    border-bottom: 2px solid white;
 
 }
 #site-footer a:hover {
@@ -158,31 +160,29 @@ img, video{
     border-bottom: 2px solid orange;
 
 }
-#nosotros-main section:first-child {
+#nosotros-main section:first-child, #proyectos-main section:first-child {
     background-color: #333; 
     padding: 80px 10%;
 }
-#nosotros-main section:first-child>h1 {
+#nosotros-main section:first-child>h1, #proyectos-main section:first-child h1 {
     color: orange;
     font-size: 3rem;
-    display: flex;
     margin: 15px;
-    padding: 35px;;
+    padding: 35px;
     
 }
-#nosotros-main section:first-child div {
+#nosotros-main section:first-child div, #proyectos-main section:first-child div {
     color: #fff;
     display: flex;
     padding: 55px;
     justify-content: space-between;
-
 }
-#nosotros-main section:first-child div p {
+#nosotros-main section:first-child div p, #proyectos-main section:first-child div p {
     width: 45%;
     
 }
-#nosotros-main section:first-child div p:first-child {
-    border-bottom: 1px solid chocolate;
+#nosotros-main section:first-child div p:first-child, #proyectos-main section:first-child div p {
+    border-bottom: 2px solid chocolate;
     font-weight: bold;
     font-size: 16px;
     
@@ -190,16 +190,19 @@ img, video{
 #nosotros-main section:first-child div p:last-child {
     font-size: 15px;
 }
+
+/* segunda sección */
 #nosotros-main section:nth-child(2), section:last-child {
     margin: 100px 80px;
 }
 #nosotros-main section:nth-child(2) div {
     display: flex;
     justify-content: space-between;
-    padding: 50px 0;
+    margin: 30px 0;
+    margin-bottom: 50px;
 }
 #nosotros-main section:nth-child(2) h2, section:last-child h2 {
-    font-size: 2.5rem;
+    font-size: 2.0rem;
 }
 
 #nosotros-main section:nth-child(2) div>p {
@@ -207,7 +210,7 @@ img, video{
    width: 45%;
 }
 
-
+/* ultima sección */
 #nosotros-main section:last-child .ter {
     display: flex;
     justify-content: space-between;
@@ -220,5 +223,16 @@ img, video{
 #nosotros-main section:last-child i{
     color: orange;
     font-size: 50px;
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
-
+#nosotros-main section:last-child .ter>div>h3 {
+    margin-bottom: 20px;
+}
+#proyectos-main section:nth-child(2) {
+    flex-wrap: wrap;
+    display: flex;
+}
+#proyectos-main section article {
+    width: 50%;
+}
