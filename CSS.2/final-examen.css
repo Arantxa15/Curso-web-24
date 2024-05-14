@@ -1,0 +1,64 @@
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    font-family: sans-serif;
+}
+.contenedor-principal {
+    background-color: #444;
+    padding: 0 20px;
+}
+header {
+    background-color: aliceblue;
+}
+header>nav ul {
+    display: flex;
+}
+header>nav>ul>li a {
+    display: inline-block;
+    padding: 20px;
+    color: black;
+    font-weight: bold;   
+}
+main {
+    background-color: white;
+    width: 70%;
+}
+main img {
+    width: 100%;
+}
+main section {
+    padding: 30px 20px;
+}
+main section h1, section p {
+    margin-bottom: 10px;
+    line-height: 1.5;
+}
+aside {
+    background-color: cadetblue;
+    padding: 50px;
+    height: 150px;
+    width: calc(30% - 100px);
+}
+aside h4 {
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+}
+aside ul li {
+    margin-bottom: 15px;
+    border-bottom: 2px solid black;
+    font-weight: bold;
+}
+footer {
+    background-color: deeppink;
+    color: white;
+    font-weight: bold;
+    padding: 50px 0;
+    width: 70%;
+    text-align: center;
+}
+.dos {
+    display: flex;
+    flex-wrap: wrap;
+}

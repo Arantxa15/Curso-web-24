@@ -1,0 +1,13 @@
+
+.container {
+    display: flex;
+    flex-wrap: wrap-reverse;
+    height: 250px;
+    width: 220px;
+    flex-direction: column;
+    
+    
+}
+.container div {
+    margin: 10px;
+}
