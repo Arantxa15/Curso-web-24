@@ -77,7 +77,7 @@ img, video{
     background-color: white;
     transition: background-color 2s;
 }
-#index-main div {
+#index-main div, #proyectos-main div {
     color: black;
     font-weight: bold;
 }
@@ -88,24 +88,28 @@ img, video{
 #index-main section article:nth-child(2), #index-main section article:nth-child(3){
     width: 50%;
 }
-#index-main section article div{
+#index-main section article div, #proyectos-main section article div{
     margin-bottom: 60px;
 }
 
-#index-main article i {
+#index-main article i, #proyectos-main article i {
     margin-left: 10px;
     color: chocolate;
     translate:0px;
     opacity: 1;
 }
-#index-main article p:hover{
+#index-main article p:hover, #proyectos-main article p:hover{
     color: chocolate;
     transition: color 0.8s;
 }
-#index-main article p:hover i{
+#index-main article p:hover i, #proyectos-main article p:hover i{
     transition:translate 1s, opacity 1s;
     translate: 40px;
     opacity: 0;
+}
+#index-main section div h2, section div h3, #proyectos-main section div h2 {
+    margin-top: 15px;
+    margin-bottom: 15px;
 }
 #index-main section>div a{
     display: inline-block;
@@ -132,8 +136,28 @@ img, video{
     background-color: white;
     transition: background-color 2s;
 }
-#site-aside {
+/* #site-aside {
     display: none;
+} */
+#site-aside {
+    background-color: black;
+    color: white;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    padding: 100px;
+}
+#site-aside h2 {
+    margin-bottom: 30px;
+}
+#site-aside p {
+    margin-bottom: 20px;
+}
+#site-aside button {
+    padding: 10px;
+    background-color: orange;
+    border-color: orange;
+    cursor: pointer;
 }
 #site-footer {
     background-color: black;
@@ -152,9 +176,14 @@ img, video{
 
 }
 #site-footer a:hover {
+    border-bottom: 2px solid chocolate;
     cursor: pointer;
     color: chocolate;
 }
+#site-footer i {
+    margin-bottom: 5px;
+}
+
 /* NOSOTROS */
 #site-header .active {
     border-bottom: 2px solid orange;
@@ -238,3 +267,7 @@ img, video{
 #proyectos-main section article {
     width: 50%;
 }
+#proyectos-main div>h2  {
+    font-size: 18px;
+}
+
