@@ -84,6 +84,7 @@ img, video{
 #index-main section {
     flex-wrap: wrap;
     display: flex;
+    justify-content: center;
 }
 #index-main section article:nth-child(2), #index-main section article:nth-child(3){
     width: 50%;
@@ -111,17 +112,19 @@ img, video{
     margin-top: 15px;
     margin-bottom: 15px;
 }
-#index-main section>div a{
+
+#index-main div>a{
     display: inline-block;
     padding: 15px;
     color: black;
     border: 1px solid black;
     margin: auto;
 }
-#index-main section>a:hover{
+#index-main div>a:hover{
     background-color: black;
     color: chocolate;
     transition: background-color 1s;
+    
 }
 #index-main section:last-child h2 {
     font-size: 40px;
@@ -136,9 +139,7 @@ img, video{
     background-color: white;
     transition: background-color 2s;
 }
-/* #site-aside {
-    display: none;
-} */
+
 #site-aside {
     background-color: black;
     color: white;
@@ -146,6 +147,7 @@ img, video{
     position: fixed;
     bottom: 0;
     padding: 100px;
+    display: none;
 }
 #site-aside h2 {
     margin-bottom: 30px;
