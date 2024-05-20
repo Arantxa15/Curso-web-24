@@ -1,33 +1,29 @@
-// Introducción a JavaScript
-// console.log('Hola Mundo!');
-// console.log(2+1);
-
 // INICIO
-console.log('Contador a cero');
-contador = 0;
+let contador;
 
-// Entra un cliente
-console.log('Entra un cliente');
-contador++;
+// CONTADOR A CERO
+contador= 0;
 
-console.log("Número de personas: " + contador);
+// TENEMOS QUE IDENTIFIACAR TODOS LOS ELEMENTOS HTML QUE VAYAMOS A MANIPULAR CON JS
+// LOS GUARDAMOS EN VARIABLES:
+let btnSumar = document.getElementById("btn-sumar");
+let btnRestar = document.getElementById("btn-restar");
 
-// Primer caso: Sale un cliente
-console.log('Sale un cliente');
-contador--;
-console.log("Número de personas: " + contador);
+let pTotal = document.getElementById("resultado");
+let pCompleto = document.getElementById("completo");
 
-// Segundo caso: Llega un cliente
-console.log('Llega un cliente');
+// LAS FUNCIONES SON BLOQUES DE CÓDIGO REUTILIZABLES QUE PODEMOS LLAMAR A VOLUNTAD
+function sumar() {
+    if (contador < 20) contador++;
+    resultado();
+}
 
-contador = 20; 
-if (contador == 20) {
-    // Si se cumple la condición se ejecuta:
-    console.log('Aforo completo, espera a que salga alguien');
-
-} else {
-    // Si no se cumple la condición se ejecuta este:
-    console.log('El cliente entra');
-    contador++;
-    console.log("Número de personas: " + contador);
+function restar() {
+    if (contador > 0) contador--;
+    contador--;
+    resultado();
+}
+function resultado() {
+    pTotal.innerHTML = contador;
+    // CADA VEZ QUE EJECUTAMOS ESTA FUNCIÓN, EL PÁRRAFO HTML SE ACTUALIZA CON EL VALOR DEL CONTADOR
 }

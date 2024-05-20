@@ -33,7 +33,7 @@ div.contenedor {
     transform: translateY(2px);
 }
 #completo {
-    /* opacity: 0; */
+    opacity: 0;
     background-color: rgba(255, 0, 0, 0.6);
     padding: 20px;
     border-radius: 5px;
