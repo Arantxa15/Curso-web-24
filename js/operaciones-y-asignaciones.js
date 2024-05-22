@@ -62,3 +62,4 @@ y = 3;
 z = x % y;
 //  esto nos da el resto de la división, no el resultado
 console.log("x % y = " + z); 
+

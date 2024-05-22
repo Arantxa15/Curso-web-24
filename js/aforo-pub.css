@@ -38,3 +38,10 @@ div.contenedor {
     padding: 20px;
     border-radius: 5px;
 }
+.contenedor button.inactivo {
+    background-color: lightgrey;
+    color: lightgray;
+    box-shadow: none;
+    transform: translateY(2px);
+    cursor: default;
+}

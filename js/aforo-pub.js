@@ -27,6 +27,7 @@ function sumar() {
         btnSumar.style.backgroundColor = 'lightgray';
     }
     resultado();
+    comprobarBoton()
 }
 
 function restar() {
@@ -43,4 +44,10 @@ function restar() {
 function resultado() {
     pTotal.innerHTML = contador;
     // CADA VEZ QUE EJECUTAMOS ESTA FUNCIÓN, EL PÁRRAFO HTML SE ACTUALIZA CON EL VALOR DEL CONTADOR
+}
+// Función para habilitar o deshabilitar los botones
+function comprobarBoton(){
+    if (contador > 0) {
+        btnRestar.classList.remove('inactivo');
+    }
 }
