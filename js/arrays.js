@@ -65,3 +65,10 @@ console.log(listaAlumnas[listaAlumnas.length - 1]);
 // [listaAlumnas.length = 4]
 // Luego lo restamos para que el número coincida con el último índice, que este caso sería 3
 
+const paises = [];
+paises[0] = "Honduras";
+paises[1] = "Bolivia";
+paises[2] = "Colombia";
+paises[3] = "Brasil";
+
+console.log(paises);
