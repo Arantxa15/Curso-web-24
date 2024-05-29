@@ -39,7 +39,6 @@ console.log(fecha);
 // o ms es el tiempo Zero, 1 de Enero de 1970 00:00UTC
 // Un día (24h) son 86 400 000 ms
 // La fecha actual es: 1716888227553 ms desde el 1 de Enero de 1970
-
 fecha = new Date(1716888227553);
 console.log(fecha);
 
@@ -48,3 +47,64 @@ console.log(fecha);
 
 fecha = new Date(-86400000);
 console.log(fecha);
+
+
+
+// ----MÉTODOS----
+
+fecha = new Date ('1991-06-21');
+console.log(fecha.toDateString());
+//toDateString transforma la fecha a un formato más legible
+
+console.log(fecha.toISOString());
+console.log(fecha.toUTCString());
+// Distintos formatos de fecha
+
+// Parsear fechas
+// Date.parse() convierte un string de fecha a milisegundos
+console.log(Date.parse('May 29 2024'));
+console.log(new Date(1716933600000));
+
+// --- TOMAR DATOS DEL OBJETO FECHA ---
+fecha = new Date(1996, 9, 24, 4);
+console.log(fecha);
+
+const días = [
+    'domingo',
+    'lunes',
+    'martes',
+    'miércoles',
+    'jueves',
+    'viernes',
+    'sábado'
+]
+const meses = [
+    'enero',
+    'febrero',
+    'marzo',
+    'abril',
+    'mayo',
+    'junio',
+    'julio',
+    'agosto',
+    'septiembre',
+    'octubre',
+    'noviembre',
+    'diciembre'
+]
+// fecha.getDay() = 4
+// Por lo tanto, lo de abajo equivale a:
+// días[4]
+console.log(días[fecha.getDay()]);
+
+// fecha.getMonth() = 9
+// Este número equivale al mes de octubre
+// ya que empezamos a contar los meses desde 0
+console.log(meses[fecha.getMonth()]);
+
+// Otros métodos get (tomar)
+let fechaActual = new Date();
+// hora, minutos, segundos
+console.log(fechaActual.getHours());
+console.log(fechaActual.getMinutes());
+console.log(fechaActual.getSeconds());
