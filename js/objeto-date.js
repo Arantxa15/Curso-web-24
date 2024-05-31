@@ -108,3 +108,121 @@ let fechaActual = new Date();
 console.log(fechaActual.getHours());
 console.log(fechaActual.getMinutes());
 console.log(fechaActual.getSeconds());
+
+// calcular un día en milisegundos
+
+//1000ms * 60s* 60m24h
+
+console.log(1000606024);
+
+let fechaHoy= new Date();
+
+console.log(new Date(fechaHoy-86400000));
+
+
+// 18 años en milisegundos
+
+//1000ms60s 60m* 24h
+
+//18 años365 días 24h* 60m* 60s* 1000ms
+
+let años18= new Date((183652460601000) + (4246060*1000));
+
+
+// el resultado de esta fecha restando con los años y el año actual me sirve para determinar si es mayor de esdad o no 
+
+console.log(años18);
+
+
+//-----Métodos set--------------------
+
+//Se usan para establecer datos en una fecha 
+
+// setFullYear permite establecer el año de una fecha 
+
+fecha= new Date();
+
+fecha.setFullYear(2018);
+
+console.log(fecha);
+
+// TAMBIEN PODEMOS ESTABLECER  EL AÑO, EL MES Y EL DIA 
+
+fecha.setFullYear(2022,2,25);
+console.log(fecha);
+
+
+
+
+// Establecer mes o el día 
+
+// el mes se establece con setMonth()0-11
+// el día del mes se establece con setDate() 1-31
+
+fecha.setMonth(6);
+fecha.setDate(8);
+console.log(fecha);
+
+// ejemplo pràctico
+
+// queremos realizar una reserva en un hotel el día 15 de agosto para 3 días
+
+let fechaEntrada;
+
+let fechaSalida;
+
+fechaEntrada= new Date ('2024-08-15'); 
+console.log(fechaEntrada);
+
+// con esto las dos fechas parten del día 15 de agosto 
+
+fechaSalida= fechaEntrada;
+
+// usamos setDate() para establecer el día de la fecha de salida 
+
+//Dentro del paréntesis tomamos el día de la fecha de entrada y le sumamos 3 
+
+fechaSalida.setDate(fechaEntrada.getDate()+3);
+console.log(fechaSalida);
+
+//Ejemplo 2
+
+// A un trabajador se le vence el contrato el 18 de junio 
+
+// Le han dicho que se lo van a renovar por 18 meses
+
+// Calcular la nueva fecha de vencimiento usando el objeto Date 
+
+let fechaInicio;
+let fechaFin;
+
+fechaInicio= new Date('2024-05-18');
+
+console.log(fechaInicio);
+
+fechaFin=fechaInicio;
+
+
+
+fechaFin.setMonth(fechaInicio.getMonth()+18);
+console.log(fechaFin);
+
+
+// ejemplo 3 - alarma 
+
+let alarma= new Date();  // dia de hoy 
+alarma.setUTCHours(11); // hora
+alarma.setMinutes(20); //minutos
+
+function saltarAlarma(){
+
+    if (alarma<=Date()) {
+
+        alert('Hora del descanso !!');
+    }
+
+    setTimeout(saltarAlarma,1000);
+}
+
+
+alert('Esto es una alerta')
