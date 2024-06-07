@@ -37,3 +37,10 @@ console.log("Palabra oculta: " + palabraOculta);
 // Si pierdes todas las vidas, pierdes el juego
 
 // Si pierdes el juego vuelves a empezar
+
+// Tienes que adivinar la palabra
+
+function jugar(letra) {
+    console.log(letra);
+
+}
