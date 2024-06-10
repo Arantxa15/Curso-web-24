@@ -44,3 +44,21 @@ function jugar(letra) {
     console.log(letra);
 
 }
+
+// let cadenaTexto = prompt("Ingresa una palabra");
+
+// longitud = cadenaTexto.length;
+
+
+// let contador = 0;
+
+// // Contar todos los caracteres excepto los espacios blancos
+// for (let i= 0; i < longitud; i++) {
+//     // nombramos la frase y el espacio entre comillas quita los espacios y no los cuenta
+//     if (cadenaTexto[i] != ' ') {
+//         contador++;
+//     }
+// }
+
+    
+// alert("La longitud del texto es: " + contador);
