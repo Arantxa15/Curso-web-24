@@ -20,7 +20,7 @@ console.log(palabra);
 let longitud = palabra.length;
 console.log("Longitud: " + longitud);
 
-let palabraOculta = '';
+let palabraOculta = ''; 
 
 // si longitud es de 7, el for se repite 7 veces
 for (let i = 0; i < longitud; i++) {

@@ -4,7 +4,7 @@
 let palabra = '';
 
 const listaPalabras = [
-    'rotulador',
+    'rotulador', 
     'boligrafo',
     'marcador',
     'cuaderno',
