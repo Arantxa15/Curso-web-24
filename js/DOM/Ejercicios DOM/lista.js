@@ -11,7 +11,7 @@
  ];
 //  Creamos un contador para ir tomando distintos elementos del array.
  let contador = 0;
-
+ 
 
 function agregarLista() {
     // Tomamos el texto del array
