@@ -7,37 +7,41 @@ let lista = document.getElementById('lista');
 
 
 function agregarTarea() {
-    let texto =  input.value;
+    let texto = input.value;
 
     // 
     if (texto.length > 0) {
 
-    // construimos el elemento li
-    let elemento = document.createElement('li');
+        // construimos el elemento li
+        let elemento = document.createElement('li');
 
-    // Le añadimos el contenido
-
-
-    elemento.innerHTML = '<button onclick = "marcarTarea(this)">Marcar</button>';
+        // Le añadimos el contenido
 
 
-    elemento.innerHTML += texto;
-    
-    elemento.innerHTML += '<button onclick = "borrarTarea(this)">X</button>';
+        //le añadimos el contenido
+        elemento.innerHTML = '<button onclick="marcarTarea(this)"><i class="bi bi-check2"></i></button>'
+        elemento.innerHTML += texto;
+        elemento.innerHTML += '<button onclick="borrarTarea(this)"><i class="bi bi-x-lg"></i></button>';
 
-    // Lo agrgamos a la lista
-    lista.appendChild(elemento);
+        // añadimos el evento  para click en cualquier sitio y que se desmarque
 
-    // Borramos el texto del input
-    input.value = '';
+        elemento.addEventListener('click', marcarTarea);
+
+
+
+        // Lo agrgamos a la lista
+        lista.appendChild(elemento);
+
+        // Borramos el texto del input
+        input.value = '';
     }
 }
 
-function borrarTarea(botonX){
+function borrarTarea(botonX) {
     // Al pulsar el botón de borrar, identificamos al 'li' padre
     let tarea = botonX.parentElement;
 
-    
+
 
     // Borramos la tarea
     // con css 1ª opción
@@ -49,7 +53,7 @@ function borrarTarea(botonX){
 }
 
 function marcarTarea(botonM) {
-    
+
     let tarea = botonM.parentElement;
 
     // Marcamos la tarea con un color
@@ -64,7 +68,7 @@ boton.addEventListener('click', agregarTarea);
 // Ejecutar varios eventos, pero con la tecla 'Enter'
 
 // keypress, pulsar una tecla del teclado; function(evento), activar la función
-input.addEventListener('keypress', function(evento) {
+input.addEventListener('keypress', function (evento) {
 
     // ejecutar la función a la tecla 'Enter'
     if (evento.key == 'Enter') {
