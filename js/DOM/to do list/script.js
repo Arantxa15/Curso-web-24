@@ -6,73 +6,87 @@ let lista = document.getElementById('lista');
 
 
 
-function agregarTarea() {
-    let texto = input.value;
 
-    // 
+
+
+function agregarTarea() {
+
+    //Guardamos el contenido del input en una variable 
+
+    let texto = input.value;
     if (texto.length > 0) {
 
-        // construimos el elemento li
+
+
+        //construimos el elemento li
         let elemento = document.createElement('li');
-
-        // Le añadimos el contenido
-
 
         //le añadimos el contenido
         elemento.innerHTML = '<button onclick="marcarTarea(this)"><i class="bi bi-check2"></i></button>'
         elemento.innerHTML += texto;
         elemento.innerHTML += '<button onclick="borrarTarea(this)"><i class="bi bi-x-lg"></i></button>';
 
+
         // añadimos el evento  para click en cualquier sitio y que se desmarque
 
         elemento.addEventListener('click', marcarTarea);
 
+        //lo añadimos a la lista 
 
-
-        // Lo agrgamos a la lista
         lista.appendChild(elemento);
 
-        // Borramos el texto del input
+        // borramos el texto del input
+
         input.value = '';
     }
 }
+// a boton le agregamos un evento, que activa la función agregar tarea cuando hacemos click sobre éste
+
+boton.addEventListener('click', agregarTarea);
+
+
+//Ejecutar el mismo evento,pero la tecla 'Enter'
+
+input.addEventListener('keypress', function (evento) {
+    if (evento.key == 'Enter') {
+        agregarTarea();
+
+    }
+})
 
 function borrarTarea(botonX) {
-    // Al pulsar el botón de borrar, identificamos al 'li' padre
+
+    //Al pulsar el botón de borrar identificamos al li padre
+
     let tarea = botonX.parentElement;
 
+    //borramos la tarea
 
+    // tarea.style.display='none';
 
-    // Borramos la tarea
-    // con css 1ª opción
-    // tarea.style.display = 'none';
+    // Con removedchild()
+    //vamos al padre que es la ul - lista y eliminamos el li
 
-    // con removeChild() 2ª opción
-    // vamos al padre (que es la 'ul', lista) y eliminamos el 'li' (el hijo)
     lista.removeChild(tarea);
+
+
 }
+
+// Marcar tarea 
 
 function marcarTarea(botonM) {
 
-    let tarea = botonM.parentElement;
 
-    // Marcamos la tarea con un color
-    tarea.style.color = 'lightblue';
-}
+    // si clicamos directamente el li (el texto) le cambiamos directamente la clase
+
+    this.classList.toggle('marcada')
+
+    // si entramos desde el botón buscamos al padre (li) y le cambiamos la clase 
+
+    if (botonM) {
+        botonM.parentElement.classList.toggle('marcada');
 
 
-
-// A boton le agregamos un evento, que activa la función agregarTarea caundo ghacemos click sobre éste.
-boton.addEventListener('click', agregarTarea);
-
-// Ejecutar varios eventos, pero con la tecla 'Enter'
-
-// keypress, pulsar una tecla del teclado; function(evento), activar la función
-input.addEventListener('keypress', function (evento) {
-
-    // ejecutar la función a la tecla 'Enter'
-    if (evento.key == 'Enter') {
-        agregarTarea();
     }
 
-})
+}

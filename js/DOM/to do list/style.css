@@ -1,0 +1,77 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Inconsolata', monospace;
+    list-style: none;
+}
+
+header {
+    text-align: center;
+    padding: 30px;
+    margin: 30px;
+    background-color: rgb(76, 122, 160);
+}
+
+h1 {
+    font-size: 3rem;
+    color: white;
+}
+
+p {
+    font-size: 20px;
+    color: white;
+}
+
+h1, p, #inputTexto{
+    margin-top: 20px;
+}
+
+#inputTexto {
+    width: 80%;
+    padding: 10px;
+
+    background-color: white;
+}
+
+#btnAñadir {
+    width: 10%;
+    padding: 10px;
+    cursor: pointer;
+    background-color: white;
+}
+.marcada {
+    color: rgb(100, 100, 100);
+    text-decoration: line-through;
+}
+#lista {
+    color: black;
+    margin: 30px;
+    padding: 30px 0;
+    background-color: rgb(174, 210, 240);
+    
+}
+/* ul li:nth-child(odd) {
+    background: #f9f9f9;
+} */
+
+ul li:hover {
+    background: #ddd;
+    cursor: pointer;
+  }
+li {
+    margin-bottom: 10px;
+    padding: 0 30px;
+}
+
+
+li button:last-child {
+    float: right;
+}
+
+button {
+    margin-right: 20px;
+    font-size: 20px;
+    border: none;
+    background-color: #ddd;
+}
