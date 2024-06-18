@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Banner de imagenes</title>
+</head>
+
+<body>
+
+    <!--contenedor del banner-->
+
+    <div class="contenedor-banner">
+        <!--imagenes con todo el ancho , número y texto-->
+        <div class="diapositivas fade">
+
+            <div class="numero">1/5</div>
+
+            <img src="img/1.jpg" alt="">
+
+            <div class="texto">Texto de foto</div>
+
+
+        </div>
+
+        <div class="diapositivas fade">
+
+            <div class="numero">2/5</div>
+
+            <img src="img/2.jpg" alt="">
+
+            <div class="texto">Texto de foto</div>
+
+
+        </div>
+
+
+        <div class="diapositivas fade">
+
+            <div class="numero">3/5</div>
+
+            <img src="img/3.jpg" alt="">
+
+            <div class="texto">Texto de foto</div>
+
+
+        </div>
+
+        <div class="diapositivas fade">
+
+            <div class="numero">4/5</div>
+
+            <img src="img/4.jpg" alt="">
+
+            <div class="texto">Texto de foto</div>
+
+
+        </div>
+
+        <div class="diapositivas fade">
+
+            <div class="numero">5/5</div>
+
+            <img src="img/5.jpg" alt="">
+
+            <div class="texto">Texto de foto</div>
+
+
+
+
+
+
+        </div>
+
+        <!--Botones siguiente y anterior-->
+
+        <a class="anterior" onclick="cambiarDiapositiva(-1)"><i class="bi bi-caret-left-fill"></i></a>
+
+        <a class="siguiente" onclick="cambiarDiapositiva(1)"><i class="bi bi-caret-right-fill"></i></a>
+
+        <br>
+
+        <!--Los puntos / círculos-->
+
+        <div class="contenedor-puntos">
+
+            <span class="punto" onclick="establecerDiapositiva(1)"></span>
+            <span class="punto" onclick="establecerDiapositiva(2)"></span>
+            <span class="punto" onclick="establecerDiapositiva(3)"></span>
+            <span class="punto" onclick="establecerDiapositiva(4)"></span>
+            <span class="punto" onclick="establecerDiapositiva(5)"></span>
+
+
+        </div>
+    </div>
+
+
+
+
+
+
+</body>
+<script src="script.js"></script>
+
+</html>

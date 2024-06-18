@@ -1,0 +1,133 @@
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css");
+
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+img{
+    width: +100%;
+    height: 50%;
+}
+
+
+
+
+.contenedor-banner{
+
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
+}
+
+/* tenemos que esconder las diapositivas por defecto*/
+
+.diapositivas{
+
+    display: none;
+}
+
+/* botonee Siguiente/Anterior*/
+
+.anterior,.siguiente{
+
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+   
+    transition: .6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+
+}
+
+/* mover el botón siguiente a la derecha*/
+
+.siguiente{
+
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+/* al poner el cursor sobre los botones, añadir un fondo negro con un poco de transparencia */
+
+.anterior:hover, .siguiente:hover{
+
+    background-color:rgba(0, 0,0, 0.8);
+}
+
+i.bi{
+
+     color:white;
+     font-weight: bold;
+     font-size: 18px;
+     
+}
+
+/* texto de diapositiva*/
+
+.texto{
+
+    color: #f2f2f2;
+    font-style: 15px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+}
+
+.numero{
+
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+    
+}
+
+/* los puntos */
+
+.punto{
+
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color .6s ease;
+
+}
+
+.activo,.punto:hover{
+
+    background-color: #717171;
+
+}
+
+/* Animación*/
+.fade{
+
+    animation:fade 1.5s;
+}
+
+@keyframes fade{
+
+    from{opacity: .4;}
+    to{opacity: 1;}
+}
+
+.contenedor-puntos{
+
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
