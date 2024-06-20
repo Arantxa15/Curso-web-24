@@ -18,9 +18,10 @@
 
             <div class="numero">1/5</div>
 
-            <img src="img/1.jpg" alt="">
+            <!-- <img src="img/1.jpg" alt=""> -->
+             <div class="img primera"></div>
 
-            <div class="texto">Texto de foto</div>
+            <div class="texto">Atardecer en la playa.</div>
 
 
         </div>
@@ -29,9 +30,12 @@
 
             <div class="numero">2/5</div>
 
-            <img src="img/2.jpg" alt="">
+            <div class="img segunda"></div>
 
-            <div class="texto">Texto de foto</div>
+        
+
+
+            <div class="texto">Naturaleza espejo.</div>
 
 
         </div>
@@ -41,9 +45,9 @@
 
             <div class="numero">3/5</div>
 
-            <img src="img/3.jpg" alt="">
+            <div class="img tercera"></div>
 
-            <div class="texto">Texto de foto</div>
+            <div class="texto">Dulce primavera.</div>
 
 
         </div>
@@ -52,9 +56,9 @@
 
             <div class="numero">4/5</div>
 
-            <img src="img/4.jpg" alt="">
+            <div class="img cuarta"></div>
 
-            <div class="texto">Texto de foto</div>
+            <div class="texto">Puesta de sol.</div>
 
 
         </div>
@@ -63,9 +67,9 @@
 
             <div class="numero">5/5</div>
 
-            <img src="img/5.jpg" alt="">
+            <div class="img quinta"></div>
 
-            <div class="texto">Texto de foto</div>
+            <div class="texto">Rayo de luz.</div>
 
 
 
@@ -76,9 +80,9 @@
 
         <!--Botones siguiente y anterior-->
 
-        <a class="anterior" onclick="cambiarDiapositiva(-1)"><i class="bi bi-caret-left-fill"></i></a>
+        <a class="anterior" onclick="cambiarDiapositiva(-1, 'izquierda')"><i class="bi bi-caret-left-fill"></i></a>
 
-        <a class="siguiente" onclick="cambiarDiapositiva(1)"><i class="bi bi-caret-right-fill"></i></a>
+        <a class="siguiente" onclick="cambiarDiapositiva(1 ,'derecha' )"><i class="bi bi-caret-right-fill"></i></a>
 
         <br>
 
@@ -86,12 +90,11 @@
 
         <div class="contenedor-puntos">
 
-            <span class="punto" onclick="establecerDiapositiva(1)"></span>
-            <span class="punto" onclick="establecerDiapositiva(2)"></span>
-            <span class="punto" onclick="establecerDiapositiva(3)"></span>
-            <span class="punto" onclick="establecerDiapositiva(4)"></span>
-            <span class="punto" onclick="establecerDiapositiva(5)"></span>
-
+            <span class="punto" onclick="puntoDiapositiva(1)"></span>
+            <span class="punto" onclick="puntoDiapositiva(2)"></span>
+            <span class="punto" onclick="puntoDiapositiva(3)"></span>
+            <span class="punto" onclick="puntoDiapositiva(4)"></span>
+            <span class="punto" onclick="puntoDiapositiva(5)"></span>
 
         </div>
     </div>
@@ -102,6 +105,7 @@
 
 
 </body>
-<script src="script.js"></script>
+<script src="script-optmizado.js"></script>
+
 
 </html>

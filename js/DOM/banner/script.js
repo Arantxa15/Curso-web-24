@@ -10,17 +10,22 @@ let indice=1;
 
 diapositivas[indice-1].style.display='block';
 
-function cambiarDiapositiva(x) {
+function cambiarDiapositiva(valor, direccion) {
 
     // hacemos desaparecer todas las diapositivas
     for (let i = 0; i< diapositivas.length; i++) {
        diapositivas[i].style.display='none';
     }
 
+    console.log('has pulsado la flecha '+ direccion)
+
+
+
+
     //cambiamos el indice segun la flecha que pulsamos
-    indice+=x;
+    indice+=valor;
     
-    // corregimos el indice
+    // corregimos el indice esta funciÃ³n sirve(para que cuando termine la ultima diapositiva, el bucle vuelva a empezar desde la primera.
 
     if (indice <1) { indice= diapositivas.length};
     if (indice >diapositivas.length) { indice=1};
@@ -34,16 +39,18 @@ function cambiarDiapositiva(x) {
     
 }
 
-function establecerDiapositiva(x){
+function puntoDiapositiva(punto){
     //seleccionamos una diapositiva dependiendo del circulo que pulsemos
 
     // hacemos desaparecer todas las diapositivas
     for (let i = 0; i< diapositivas.length; i++) {
+        
         diapositivas[i].style.display='none';
      }
  
      //cambiamos el indice segun la flecha que pulsamos
-     indice=x;
+
+     indice=punto;
      
       
      
