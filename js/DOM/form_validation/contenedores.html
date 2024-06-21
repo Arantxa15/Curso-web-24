@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style_cotenedores.css">
+    
+</head>
+<body>
+    <div class ="contenedor">
+        <div onclick="alert('has pulsado arriba a la izquierda')"></div>
+        <div onclick="alert('has pulsado arriba al centro')"></div>
+        <div onclick="alert('has pulsado arriba a la derecha')"></div>
+ 
+        <div onclick="this.innerHTML = 'centro a la izquierda'"></div>
+        <div onclick="this.innerHTML = 'centro'"></div>
+        <div onclick="this.innerHTML = 'centro a la derecha'"></div>
+        
+        <div onclick="fila3('abajo izquierda')"></div>
+        <div onclick="fila3('abajo centro')"></div>
+        <div onclick="fila3('abajo derecha')"></div>
+    </div>
+</body>
+<script >
+
+    function fila3(mensaje) {
+        // mostrarlo en una alerta
+        alert('has pulsado ' + mensaje);
+    }
+</script>
+</html>

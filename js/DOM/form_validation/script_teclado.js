@@ -5,15 +5,20 @@
 // En caso de que no cumplan estas condiciones, imprimir mensaje en pantalla donde se indique el error (p id= 'mensaje') 
 
 // Guardar párrafo en una variable
-let mensaje = document.getElementById("mensaje");
+// let mensaje = document.getElementById("mensaje");
+let mensaje = document.getElementById('mensaje')
+let inputPass1 = document.querySelector('#fpass1');
+let inputPass2 = document.getElementById('fpass2');
 
 
 function comprobar() {
     // Al pulsar el botón guardamos las contraseñas en variables
 
-    let pass1 = document.getElementById("fpass1").value;
-    let pass2 = document.getElementById("fpass2").value;
-    
+    // guardamos los inputs de las contraseñas en variables.
+    // esto nos dará facilidad de acceso en un futuro.
+    let pass1 = inputPass1.value;
+    let pass2 = inputPass2.value;
+
     // Value es el contenido que escribe el usuario dentro del input
 
     // Comprobar que son igaules
@@ -41,4 +46,9 @@ function comprobar() {
         mensaje.innerHTML = 'Las contraseñas deben de tener al menos 4 caracteres'
     }
 
+
 }
+// añadimos un evento al segundo input para que compruebe las contraseñaas cada vez que pulsamos el teclado
+inputPass2.addEventListener('keyup', comprobar);
+
+// keyup se activa cada vez que soltamos  una tecla
