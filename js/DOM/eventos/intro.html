@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eventos con DOM</title>
+</head>
+<body>
+    <h1>Eventos en JavaSCript</h1>
+    
+    <p>Ejemplos de eventos:</p>
+    
+    <ul>
+        <li onclick="this.innerHTML = 'Oh, vaya...'">
+            Cuando el usuario clica en un botón (onclick).
+        </li>
+        <li onmouseover="this.innerHTML = 'No me toques!!'" onmouseout="this.innerHTML = 'Gracias.'">
+            Cuando el usuario pasa el cursor sobre elementos (mouseover)
+        </li onclick=>
+        <li>
+            Cuando el cursor sale de un elemento (mouseout).
+        </li>
+        <li>
+            Cuando un elemento (la web, una img) termina de cargar (onload).
+        </li>
+        <li>
+            Cuando el usuario pulsa una tecla (keydown) o la suelta (keyup).
+        </li>
+        <li>
+            Cuando un input es alterado(onchange).
+        </li>
+        <li>
+            Cuando se envía un formulario (onsubmit)
+        </li>
+    </ul>
+
+    <p onclick="displayDate()" id="parrafo1">Haz clic en este texto para mostrar la fecha</p>
+    <script>
+        function displayDate() {
+           let parrafo = document.getElementById('parrafo1');
+           parrafo.innerHTML = Date();
+
+        }
+    
+    </script>
+</body>
+</html>

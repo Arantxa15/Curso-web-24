@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #container {
+            width: 400px;
+            height: 400px;
+            position: relative;
+            background-color: lightgoldenrodyellow;
+        }
+
+        #animate,
+        #circle {
+            width: 50px;
+            height: 50px;
+            position: absolute;
+        }
+
+        #animate {
+            /* width: 50px; */
+            /* height: 50px; */
+            /* position: absolute; */
+            background-color: crimson;
+            /* right: 0; */
+        }
+
+        #circle {
+            background-color: dodgerblue;
+            right: 0;
+            border-radius: 50%;
+        }
+
+        #triangle {
+            width: 0px;
+            height: 0px;
+            /* El div no ocupa espacio, solo el borde */
+            border-left: 25px solid transparent;
+            border-right: 25px solid transparent;
+            /* hacemos los bordes laterales transparentes para que estén presentes pero invisibles, dándole la forma triangular */
+            border-bottom: 50px solid blueviolet;
+            /* el triángulo es en realidad uno de los bordes */
+            position: absolute;
+            bottom: 0;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Mi primera animación con JavaScript</h1>
+    <p>
+        <button onclick="move()">Mover el cuadrado</button>
+    </p>
+    <div id="container">
+        <div id="animate"></div>
+        <div id="circle"></div>
+        <div id="triangle"></div>
+    </div>
+</body>
+<script>
+    function move() {
+        let id = null;
+        // reseteamos el id
+
+        let cuadrado = document.getElementById('animate');
+        // identificamos el cuadrado
+        let circulo = document.getElementById('circle');
+
+        let triangulo = document.getElementById('triangle');
+
+
+
+        let pos = 0;
+        // declaramos una variable con la que cambiamos la posición
+
+        clearInterval(id);
+        id = setInterval(frame, 5);
+        // activar un intervalo que llama a la función frame cada 5ms(milisegundos)
+
+        function frame() {
+            if (pos == 350) {
+                clearInterval(id);
+                // si el cubo alcanza la otra esquina, detiene la animación
+            } else {
+                pos++;
+                // cada vez que llamamos a la función, aumentamos la distancia top y left del cuadrado
+                // cuadrado.style.top = pos + 'px';
+                cuadrado.style.right = pos + 'px';
+
+                // pos del círculo
+                circulo.style.bottom = pos/2 + 'px';
+
+                // pos del triángulo
+                triangle.style.left = pos/2 + 'px';
+                triangle.style.bottom = pos/4 + 'px';
+
+                // para dejarlo en el centro, sólo le tenemos que dar la mitad de la distancia
+
+
+
+            }
+        }
+    }
+</script>
+
+</html>
