@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 3</title>
+    <style>
+       .caja {
+            width: 100px;
+            height: 50px;
+            background-color: lightblue;
+            position: absolute;
+            top: 50px;
+            left: 0;
+            transition: left 3s;
+        }
+        .mover {
+            left: calc(100% - 100px);
+            transition: left 3s;
+        }
+    </style>
+</head>
+<body>
+    <button id="btn">Mover</button>
+    
+    <div class="caja" id="caja">Contenido</div>
+    
+</body>
+<script src="3.js"></script>
+</html>

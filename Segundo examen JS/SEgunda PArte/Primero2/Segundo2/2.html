@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 2</title>
+    <style>
+         body {
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 0;
+            padding: 50px;
+        }
+
+        select {
+            padding: 5px;
+            margin-bottom: 10px;
+        }
+
+        input {
+            margin-bottom: 10px;
+        }
+
+        button {
+            padding: 15px;
+            border: none;
+            color: white;
+            background-color: #af4c63;
+            cursor: pointer;
+        }
+
+        button:disabled {
+            background-color: #cccccc;
+        }
+    </style>
+</head>
+<body>
+    <form action="#">
+        <select id="opciones" onchange="actualizarTexto()">
+            <option value="">Selecciona una opción</option>
+            <option value="opcion 1">Opcion 1</option>
+            <option value="opcion 2">Opcion 2</option>
+            <option value="opcion 3">Opcion 3</option>
+            <option value="opcion 4">Opcion 4</option>
+        </select>
+        <br>
+        <button id="boton1" onclick="deshabilitarBoton(1)" disabled>Botón 1</button>
+        <button id="boton2" onclick="deshabilitarBoton(2)" disabled>Botón 2</button>
+        <button id="boton3" onclick="deshabilitarBoton(3)" disabled>Botón 3</button>
+        <button id="boton4" onclick="deshabilitarBoton(4)" disabled>Botón 4</button>
+    </form>
+</body>
+</html>

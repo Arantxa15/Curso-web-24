@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+
+
+        .contenedores {
+
+            display: flex;
+            /* flex-wrap: wrap; */
+            justify-content: center;
+        
+
+        }
+
+        .contenedores div {
+            display: flex;
+            flex-wrap: wrap;
+            height: 50vh;
+            width: 50%;
+            border: 1px solid black;
+
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="contenedores">
+        <div onclick="contenedor('Has pulsado arriba a la izquierda')">IZQUIERDA ARRIBA</div>
+        <div onclick="contenedor('Has pulsado arriba a la derecha')">DERECHA ARRIBA</div>
+        <div onclick="contenedor('Has pulsado abajo a la izquierda')">IZQUIERDA ABAJO</div>
+        <div onclick="contenedor('Has pulsado abnajo a la derecha')">DERECHA ABAJO</div>
+    </div>
+</body>
+<script src="1.js"></script>
+</html>
